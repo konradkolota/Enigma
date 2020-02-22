@@ -4,16 +4,16 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ciphers.TestController">
+<AnchorPane maxHeight="400.0" maxWidth="460.0" minHeight="400.0" minWidth="460.0" prefHeight="400.0" prefWidth="460.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ciphers.TestController">
    <children>
-      <TextArea fx:id="textArea" layoutX="126.0" layoutY="217.0" prefHeight="140.0" prefWidth="348.0" promptText="write text you want to encode" />
-      <Button fx:id="encodeTrigger" layoutX="242.0" layoutY="148.0" mnemonicParsing="false" onAction="#triggerEncoding" prefHeight="51.0" prefWidth="100.0" text="Encode">
+      <TextArea fx:id="textArea" layoutX="58.0" layoutY="231.0" prefHeight="140.0" prefWidth="348.0" promptText="write text you want to encode" />
+      <Button fx:id="encodeTrigger" layoutX="246.0" layoutY="174.0" mnemonicParsing="false" onAction="#triggerEncoding" prefHeight="51.0" prefWidth="160.0" text="Encode">
 
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-            <Button fx:id="decode" layoutX="100.0" layoutY="148.0" mnemonicParsing="false" onAction="#triggerDecoding" prefHeight="51.0" prefWidth="100.0" text="Decode">
+            <Button fx:id="decode" layoutX="58.0" layoutY="175.0" mnemonicParsing="false" onAction="#triggerDecoding" prefHeight="51.0" prefWidth="160.0" text="Decode">
                      <font>
                         <Font size="18.0" />
                      </font>
