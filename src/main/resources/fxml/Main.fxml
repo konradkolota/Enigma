@@ -6,17 +6,19 @@
 
 <AnchorPane fx:id="root" maxHeight="439.0" maxWidth="674.0" minHeight="400.0" minWidth="287.0" prefHeight="439.0" prefWidth="522.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
    <children>
-      <TextArea fx:id="textArea" layoutX="64.0" layoutY="188.0" prefHeight="230.0" prefWidth="160.0" promptText="write text you want to encode" />
-      <Button fx:id="encodeTrigger" layoutX="64.0" layoutY="57.0" mnemonicParsing="false" onAction="#triggerEncoding" prefHeight="51.0" prefWidth="160.0" text="Encode">
+      <TextArea fx:id="inputTextArea" layoutX="64.0" layoutY="188.0" prefHeight="230.0" prefWidth="160.0" promptText="write text you want to encode" />
+      <Button fx:id="encodeTrigger" layoutX="64.0" layoutY="57.0" mnemonicParsing="false" onAction="#triggerEncoding" prefHeight="30.0" prefWidth="100.0" text="Encode">
 
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-            <Button fx:id="decode" layoutX="64.0" layoutY="123.0" mnemonicParsing="false" onAction="#triggerDecoding" prefHeight="51.0" prefWidth="160.0" text="Decode">
+            <Button fx:id="decode" layoutX="64.0" layoutY="123.0" mnemonicParsing="false" onAction="#triggerDecoding" prefHeight="30.0" prefWidth="100.0" text="Decode">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Button>
+      <Button layoutX="261.0" layoutY="288.0" mnemonicParsing="false" onAction="#saveToFile" prefHeight="30.0" prefWidth="100.0" text="Save" />
+      <Button layoutX="261.0" layoutY="220.0" mnemonicParsing="false" onAction="#loadFile" prefHeight="30.0" prefWidth="100.0" text="Load" />
    </children>
 </AnchorPane>

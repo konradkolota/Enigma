@@ -11,14 +11,14 @@ public class FileOperationsTest {
 
     @Test
     protected void testIfNumberOfLineAreEquals() {
-        String fileContent = FileLoader.getFileContent(PATH_TO_FILE);
+        String fileContent = FileTool.getFileContent(PATH_TO_FILE);
         String[] split = fileContent.split("\n");
         Assertions.assertEquals(NUMBER_OF_LINES, split.length);
     }
 
     @Test
     protected void testIfFirstLinesAreEqual() {
-        String fileContent = FileLoader.getFileContent(PATH_TO_FILE);
+        String fileContent = FileTool.getFileContent(PATH_TO_FILE);
         String[] split = fileContent.split("\n");
         Assertions.assertEquals(FIRST_LINE, split[0]);
 
