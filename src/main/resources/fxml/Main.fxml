@@ -4,21 +4,31 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="root" maxHeight="439.0" maxWidth="674.0" minHeight="400.0" minWidth="287.0" prefHeight="439.0" prefWidth="522.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+<AnchorPane fx:id="root" maxHeight="435.0" maxWidth="354.0" minHeight="389.0" minWidth="334.0" prefHeight="398.0" prefWidth="348.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
    <children>
-      <TextArea fx:id="inputTextArea" layoutX="64.0" layoutY="188.0" prefHeight="230.0" prefWidth="160.0" promptText="write text you want to encode" />
-      <Button fx:id="encodeTrigger" layoutX="64.0" layoutY="57.0" mnemonicParsing="false" onAction="#triggerEncoding" prefHeight="30.0" prefWidth="100.0" text="Encode">
+      <TextArea fx:id="inputTextArea" layoutX="34.0" layoutY="114.0" prefHeight="230.0" prefWidth="285.0" promptText="write text you want to encode" />
+      <Button fx:id="encodeTrigger" layoutX="34.0" layoutY="64.0" mnemonicParsing="false" onAction="#triggerEncoding" prefHeight="30.0" prefWidth="100.0" text="Encode">
 
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-            <Button fx:id="decode" layoutX="64.0" layoutY="123.0" mnemonicParsing="false" onAction="#triggerDecoding" prefHeight="30.0" prefWidth="100.0" text="Decode">
+            <Button fx:id="decode" layoutX="221.0" layoutY="64.0" mnemonicParsing="false" onAction="#triggerDecoding" prefHeight="30.0" prefWidth="100.0" text="Decode">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Button>
-      <Button layoutX="261.0" layoutY="288.0" mnemonicParsing="false" onAction="#saveToFile" prefHeight="30.0" prefWidth="100.0" text="Save" />
-      <Button layoutX="261.0" layoutY="220.0" mnemonicParsing="false" onAction="#loadFile" prefHeight="30.0" prefWidth="100.0" text="Load" />
+      <Button layoutX="219.0" layoutY="358.0" mnemonicParsing="false" onAction="#saveToFile" prefHeight="30.0" prefWidth="100.0" text="Save" />
+      <Button layoutX="34.0" layoutY="358.0" mnemonicParsing="false" onAction="#loadFile" prefHeight="30.0" prefWidth="100.0" text="Load" />
+      <Pane layoutX="34.0" layoutY="30.0">
+         <children>
+            <Label text="Choose cipher:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="cipherChoiceBox" layoutX="135.0" layoutY="1.0" prefWidth="150.0" />
+         </children>
+      </Pane>
    </children>
 </AnchorPane>
