@@ -33,7 +33,6 @@ public class MainController implements Initializable {
     @FXML
     private ChoiceBox<String> cipherChoiceBox;
 
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         cipherChoiceBox.setItems(possibleCipherMethods);
@@ -114,6 +113,4 @@ public class MainController implements Initializable {
             inputTextArea.setText(textContent);
         }
     }
-
-
 }
